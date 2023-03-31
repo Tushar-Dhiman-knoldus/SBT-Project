@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Storage {
     ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
+    // Function to add the elements in the Arraylist.
     public ArrayList<Integer> addElement(int element1, int element2, int element3, int element4, int element5) {
         arrayList.add(element1);
         arrayList.add(element2);
@@ -12,6 +13,8 @@ public class Storage {
         arrayList.add(element5);
         return arrayList;
     }
+
+    // Function to remove the given element from the ArrayList, if present.
     public String removeElement(int element) {
         String removedElement = "";
         if(arrayList.contains(element)){
@@ -23,6 +26,7 @@ public class Storage {
         return removedElement;
     }
 
+    // Function to remove all the elements of the ArrayList.
     public String removeAllElements() {
         String listEmpty = "";
         System.out.println(arrayList.size());
@@ -34,6 +38,7 @@ public class Storage {
         return listEmpty;
     }
 
+    // Function to check if the element is present in the list.
     public Boolean checkElement(int element){
         return arrayList.contains(element);
     }
